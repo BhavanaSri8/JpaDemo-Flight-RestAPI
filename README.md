@@ -1,3 +1,34 @@
+# JPA Demo - Flight Management API
+
+A simple Spring Boot REST API for managing flights using Spring Data JPA.
+
+## Features
+
+- Create a flight
+- Get all flights
+- Get flight by ID
+- Search flights by source, destination, and departure date
+- Update flight by ID
+- Delete flight by ID
+- Uses Spring Boot + Spring Data JPA
+
+## Tech Stack
+
+- Java
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- Maven
+
+## Project Structure
+
+```text
+src/main/java/org/hartford/jpademo/
+  controller/        # REST controllers
+  model/             # JPA entities
+  repository/        # Spring Data repositories
+  service/           # Business/service layer
+
 # JPA Demo - Flight API
 
 Spring Boot REST API for managing flights with a layered architecture (`controller`, `service`, `repository`, `model`) and JPA persistence.
@@ -93,15 +124,4 @@ App default URL:
 - Configure your datasource in `src/main/resources/application.properties`.
 - Date format for route search endpoint should match SQL date style (`yyyy-MM-dd`) because `departureDate` is handled as `java.sql.Date` in the controller.
 
-## Suggested Improvements
-
-- Add validation annotations and `@Valid`
-- Add global exception handling with `@ControllerAdvice`
-- Add Swagger/OpenAPI docs
-- Add unit and integration tests
-- Replace magic numbers with `HttpStatus` constants for readability (for example, `HttpStatus.CREATED`)
-
-## Author
-
-Practice Spring Boot JPA project.
 
