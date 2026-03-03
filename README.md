@@ -20,7 +20,6 @@ A simple Spring Boot REST API for managing flights using Spring Data JPA.
 - Spring Data JPA
 - Maven
 
-## Project Structure
 
 ```text
 src/main/java/org/hartford/jpademo/
@@ -123,5 +122,6 @@ App default URL:
 
 - Configure your datasource in `src/main/resources/application.properties`.
 - Date format for route search endpoint should match SQL date style (`yyyy-MM-dd`) because `departureDate` is handled as `java.sql.Date` in the controller.
+
 
 
